@@ -1,4 +1,4 @@
-# typed-css-modules-rollup-plugin
+# rollup-plugin-typed-css-modules
 
 Generate declaration typings with glob support
 This plugin is extended from [typed-css-modules](https://github.com/Quramy/typed-css-modules) plugin.
@@ -7,25 +7,25 @@ This plugin is extended from [typed-css-modules](https://github.com/Quramy/typed
 
 ```bash
 # yarn
-yarn add typed-css-modules-rollup-plugin --dev
+yarn add rollup-plugin-typed-css-modules --dev
 
 # npm
-npm i typed-css-modules-rollup-plugin --save-dev
+npm i rollup-plugin-typed-css-modules --save-dev
 ```
 
 ## Usage
 
 ```js
 // rollup.config.js
-import dts from "typed-css-modules-rollup-plugin";
+import dts from 'rollup-plugin-typed-css-modules';
 
 export default {
-  input: "src/index.js",
+  input: 'src/index.js',
   output: {
-    file: "dist/app.js",
-    format: "cjs",
+    file: 'dist/app.js',
+    format: 'cjs'
   },
-  plugins: [dts()],
+  plugins: [dts()]
 };
 ```
 
