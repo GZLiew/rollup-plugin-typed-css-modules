@@ -1,0 +1,42 @@
+{
+  "name": "typed-css-modules-rollup-plugin",
+  "description": "a rollup plugin to create css modules typescript declaration files",
+  "version": "0.0.1",
+  "author": "gzliew",
+  "main": "dist/index.commonjs.js",
+  "module": "dist/index.module.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GZLiew/typed-css-modules-rollup-plugin.git"
+  },
+  "files": [
+    "dist",
+    "index.d.ts",
+    "readme.md"
+  ],
+  "keywords": [
+    "rollup",
+    "plugin",
+    "typescript",
+    "css-modules",
+    "rollup-plugin",
+    "type",
+    "types",
+    "typed",
+    "css",
+    "modules",
+    "ts"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GZLiew/typed-css-modules-rollup-plugin/issues"
+  },
+  "homepage": "https://github.com/GZLiew/typed-css-modules-rollup-plugin#readme"
+}
