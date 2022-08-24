@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-typed-css-modules",
   "description": "a rollup plugin to create css modules typescript declaration files",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "gzliew",
   "main": "dist/index.commonjs.js",
   "module": "dist/index.module.js",
