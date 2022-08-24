@@ -34,7 +34,7 @@ jobs:
       - name: Install
         run: npm ci
       - name: Run tests
-        run: npm test --ci --coverage && codecov
+        run: npm test --ci --coverage
       - name: Run build
         run: npm run build
       - name: 'Automated Version Bump'
