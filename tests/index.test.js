@@ -17,7 +17,7 @@ process.chdir(`${__dirname}/fixtures`);
 
 async function build(pluginOptions) {
   await rollup({
-    input: 'src/index.js',
+    input: 'src/index.ts',
     plugins: [dts(pluginOptions)]
   });
 }
@@ -31,7 +31,7 @@ describe('typed css modules', () => {
   test('No config passed', async () => {
     await build();
 
-    expect(await fs.pathExists('src/hello.module.css.d.ts')).toBe(false);
+    expect(await fs.pathExists('src/hello.module.css.d.ts')).toBe(true);
     expect(await fs.pathExists('dist/hello.module.css.d.ts')).toBe(true);
   });
 
@@ -42,7 +42,7 @@ describe('typed css modules', () => {
       pattern: '**/*.module.css'
     });
 
-    expect(await fs.pathExists('src/hello.module.css.d.ts')).toBe(false);
+    expect(await fs.pathExists('src/hello.module.css.d.ts')).toBe(true);
     expect(await fs.pathExists('dist/hello.module.css.d.ts')).toBe(true);
   });
 
